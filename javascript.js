@@ -1,15 +1,9 @@
-let canvas = document.getElementById('canvas'),
-context = canvas.getContext('2d');
+const canvas = document.querySelector(`#canvas`)
+ctx = canvas.getContext(`2d`);
+const image = document.querySelector(`#source`);
+ctx.drawImage(image, 0,0);
 
-base();
 
 
 
-function base()
-{
-  pic = new Image();
-  pic.src = '1.jpg';
-  pic.onload = () =>{
-    context.drawImage(pic, 0, 0);
-  }
-}
+
