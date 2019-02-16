@@ -10,7 +10,7 @@
 <body>
     <div style="display:none;">
         <img id="source"
-             src="1.jpg"
+             src="2.jpg"
              width="300" height="227">
       </div>
 
@@ -18,13 +18,22 @@
         
 
 <canvas id = "canvas" width = "700" height="300px"></canvas>
-<div id ="Colors">
+<fieldset id ="Colors">
 <button id="black"><strong>Czarny</strong></button>
 <button id="green"><strong>Zielony</strong></button>
 <button id="yellow"><strong>Zolty</strong></button>
 <button id="red"><strong>Czerwony</strong></button>
 
-</div>
+
+
+           
+</fieldset>
+<fieldset id="filters">
+  <strong>Jasność</strong> <input type="range" name="brightness" id="brightness" min="-100" max="300">
+    
+    <strong>Nasycenie</strong> <input type="range" name="saturation" id="saturation" min="0" max="200">   
+    <strong>Kontrast</strong> <input type="range" name="contrast" id="contrast" min ="0" max="200">             
+</fieldset>
 
     
      

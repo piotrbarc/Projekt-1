@@ -1,6 +1,17 @@
-
+body
+{
+    background : yellowgreen;
+}
 
 canvas {
    
     border: 1px solid black;
+}
+fieldset
+{
+    height : 30px;
+    width : 750px;
+
+    border : 1px;
+    background : rgb(211, 135, 63);
 }

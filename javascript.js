@@ -72,3 +72,43 @@ yellow.addEventListener(`click`, () => {
 
 })
 
+
+
+const brightness = document.querySelector("#brightness");
+const contrast = document.querySelector("#contrast");
+const saturation = document.querySelector("#saturation")
+// changing filters
+
+let sV = 100;
+let cV = 100;
+let bV = 100;
+
+brightness.oninput = function(){ 
+    bV = this.value 
+    useFilters(); 
+    
+}
+contrast.oninput = function(){
+    cV = this.value
+    useFilters();
+    
+}
+saturation.oninput = function(){
+    sV = this.value
+    useFilters();
+   
+}
+
+function useFilters(){ 
+    ctx.filter = `brightness(${bV}%) 
+    contrast(${cV}%)
+     saturate(${sV}%)`
+    ctx.drawImage(image,0,0,698,298)
+}
+
+
+
+
+
+
+
